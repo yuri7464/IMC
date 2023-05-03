@@ -1,0 +1,57 @@
+programa
+{
+	inclua biblioteca Matematica -->m
+	
+	real peso,altura, IMC
+	
+	funcao inicio()
+	{
+		escreva("Informe a sua altura: ")
+			leia(altura)
+
+		escreva("\nInforme o seu peso: ")
+			leia(peso)
+
+	altura = m.potencia(altura, 2)
+	IMC = peso/altura
+
+		escreva("\nCLASSIFICAÇÃO DE IMC")
+		
+			se (IMC<18.5) 
+		{
+		escreva("\nSua Índice de Massa Corpórea (IMC) é: ",IMC)
+
+		escreva("\nABAIXO DO PESO")
+		}
+		
+			senao se (IMC>=15.5 e IMC<=25)
+		{
+		escreva("\nSua Índice de Massa Corpórea (IMC) é: ",IMC)
+
+		escreva("\nPESO IDEAL ")
+		}	
+
+			senao se (IMC>=25 e IMC<=30)
+		{
+		escreva("\nSua Índice de Massa Corpórea (IMC) é: ",IMC)
+
+		escreva("\nSOBREPESO")
+		}
+		
+			senao se (IMC>=30 e IMC<=40)
+		{
+		escreva("\nSua Índice de Massa Corpórea (IMC) é: ",IMC)
+
+		escreva("\nOBESIDADAE")
+		}	
+
+			senao
+		{
+		escreva("\nSua Índice de Massa Corpórea (IMC) é: ",IMC)
+
+		escreva("\nOBESIDADE MÓRBIDA")
+		}	
+		
+			
+	}
+}
